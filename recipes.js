@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    document.querySelector('.searchResults').innerHTML = '';
     $('#searchButton').on('click', function () {
         $.ajax({
             url: `https://api.spoonacular.com/recipes/complexSearch?query=${$('#searchValue').val()}&apiKey=c25e2d349ba842ee8186ded1ff30b942`
